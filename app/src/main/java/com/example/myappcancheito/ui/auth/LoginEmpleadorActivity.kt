@@ -27,31 +27,31 @@ class LoginEmpleadorActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.btnLogin.setOnClickListener {
+        binding.btnLoginEmp.setOnClickListener {
             validarInfo()
         }
 
-        binding.tvIrRegistro.setOnClickListener {
+        binding.tvIrRegistroEmp.setOnClickListener {
             startActivity(Intent(this, RegisterEmpleadorActivity::class.java))
         }
     }
 
     private fun validarInfo() {
-        email = binding.etCorreo.text.toString().trim()
-        password = binding.etContrasena.text.toString().trim()
+        email = binding.etCorreoEmp.text.toString().trim()
+        password = binding.etContrasenaEmp.text.toString().trim()
 
         when {
             email.isEmpty() -> {
-                binding.etCorreo.error = "Ingrese email"
-                binding.etCorreo.requestFocus()
+                binding.etCorreoEmp.error = "Ingrese email"
+                binding.etCorreoEmp.requestFocus()
             }
             !Patterns.EMAIL_ADDRESS.matcher(email).matches() -> {
-                binding.etCorreo.error = "Email no válido"
-                binding.etCorreo.requestFocus()
+                binding.etCorreoEmp.error = "Email no válido"
+                binding.etCorreoEmp.requestFocus()
             }
             password.isEmpty() -> {
-                binding.etContrasena.error = "Ingrese contraseña"
-                binding.etContrasena.requestFocus()
+                binding.etContrasenaEmp.error = "Ingrese contraseña"
+                binding.etContrasenaEmp.requestFocus()
             }
             else -> {
                 loginEmpleador()

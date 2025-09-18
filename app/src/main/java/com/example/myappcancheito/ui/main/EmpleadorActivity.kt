@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import com.example.myappcancheito.R
 import com.example.myappcancheito.ui.auth.SelecionarTipoActivity
 import com.example.myappcancheito.databinding.ActivityEmpleadorBinding
-import com.example.myappcancheito.empleador.Nav_fragment_Empleador.FragmentInicioV
+import com.example.myappcancheito.ui.fragments.FragmentInicioV
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 

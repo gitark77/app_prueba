@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.myappcancheito.R
 import com.example.myappcancheito.databinding.ActivityMainPostulanteBinding
 import com.google.android.material.navigation.NavigationView
-import com.example.myappcancheito.postulante.Nav_Fragments_Postulante.FragmentInicioP
+import com.example.myappcancheito.ui.fragments.FragmentInicioP
 
 
 class MainActivityPostulante : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener {

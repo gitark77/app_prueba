@@ -5,8 +5,9 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myappcancheito.empleador.EmpleadorActivity
-import com.example.myappcancheito.postulante.MainActivityPostulante
+import com.example.myappcancheito.ui.main.EmpleadorActivity
+import com.example.myappcancheito.ui.main.MainActivityPostulante
+import com.example.myappcancheito.ui.auth.SelecionarTipoActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

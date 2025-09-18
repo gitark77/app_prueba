@@ -25,31 +25,31 @@ class LoginPostulanteActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.btnLoginPos.setOnClickListener {
+        binding.btnLogin.setOnClickListener {
             validarInfo()
         }
 
-        binding.tvIrRegistroPos.setOnClickListener {
+        binding.tvIrRegistro.setOnClickListener {
             startActivity(Intent(this, RegisterPostulanteActivity::class.java))
         }
     }
 
     private fun validarInfo() {
-        email = binding.etCorreoPos.text.toString().trim()
-        password = binding.etContrasenaPos.text.toString().trim()
+        email = binding.etCorreo.text.toString().trim()
+        password = binding.etContrasena.text.toString().trim()
 
         when {
             email.isEmpty() -> {
-                binding.etCorreoPos.error = "Ingrese email"
-                binding.etCorreoPos.requestFocus()
+                binding.etCorreo.error = "Ingrese email"
+                binding.etCorreo.requestFocus()
             }
             !Patterns.EMAIL_ADDRESS.matcher(email).matches() -> {
-                binding.etCorreoPos.error = "Email no válido"
-                binding.etCorreoPos.requestFocus()
+                binding.etCorreo.error = "Email no válido"
+                binding.etCorreo.requestFocus()
             }
             password.isEmpty() -> {
-                binding.etContrasenaPos.error = "Ingrese contraseña"
-                binding.etContrasenaPos.requestFocus()
+                binding.etContrasena.error = "Ingrese contraseña"
+                binding.etContrasena.requestFocus()
             }
             else -> {
                 loginPostulante()
