@@ -1,23 +1,15 @@
-package com.example.myappcancheito.postulante
+package com.example.myappcancheito.ui.main
 
 import android.os.Bundle
-import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import androidx.fragment.app.Fragment
 import com.example.myappcancheito.R
 import com.example.myappcancheito.databinding.ActivityMainPostulanteBinding
-import com.example.myappcancheito.databinding.ContentMainBinding
 import com.google.android.material.navigation.NavigationView
-import androidx.fragment.app.Fragment
 import com.example.myappcancheito.postulante.Nav_Fragments_Postulante.FragmentInicioP
 
 

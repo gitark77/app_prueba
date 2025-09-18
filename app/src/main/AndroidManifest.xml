@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".MyAppCancheito"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,27 +14,27 @@
         android:roundIcon="@mipmap/tienda_icono_round"
         android:supportsRtl="true">
         <activity
-            android:name=".SelecionarTipoActivity"
+            android:name=".ui.auth.SelecionarTipoActivity"
             android:exported="false"
             android:theme="@style/Theme.Myappcancheito.NoActionBar"/>
         <activity
-            android:name=".postulante.LoginPostulanteActivity"
+            android:name=".ui.auth.LoginPostulanteActivity"
             android:exported="false"
             android:theme="@style/Theme.Myappcancheito"/>
         <activity
-            android:name=".postulante.RegisterPostulanteActivity"
+            android:name=".ui.auth.RegisterPostulanteActivity"
             android:exported="false"
             android:theme="@style/Theme.Myappcancheito"/>
         <activity
-            android:name=".empleador.LoginEmpleadorActivity"
+            android:name=".ui.auth.LoginEmpleadorActivity"
             android:exported="false"
             android:theme="@style/Theme.Myappcancheito" />
         <activity
-            android:name=".empleador.RegisterEmpleadorActivity"
+            android:name=".ui.auth.RegisterEmpleadorActivity"
             android:exported="false"
             android:theme="@style/Theme.Myappcancheito" />
         <activity
-            android:name=".empleador.EmpleadorActivity"
+            android:name=".ui.main.EmpleadorActivity"
             android:exported="false"
             android:theme="@style/Theme.Myappcancheito.NoActionBar" />
         <activity
@@ -47,7 +48,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".postulante.MainActivityPostulante"
+            android:name=".ui.main.MainActivityPostulante"
             android:exported="true"
             android:theme="@style/Theme.Myappcancheito.NoActionBar" />
     </application>

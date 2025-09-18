@@ -1,4 +1,4 @@
-package com.example.myappcancheito.empleador
+package com.example.myappcancheito.ui.main
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.example.myappcancheito.R
-import com.example.myappcancheito.SelecionarTipoActivity
+import com.example.myappcancheito.ui.auth.SelecionarTipoActivity
 import com.example.myappcancheito.databinding.ActivityEmpleadorBinding
 import com.example.myappcancheito.empleador.Nav_fragment_Empleador.FragmentInicioV
 import com.google.android.material.navigation.NavigationView

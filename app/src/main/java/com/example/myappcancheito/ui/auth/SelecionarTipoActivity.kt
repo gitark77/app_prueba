@@ -1,12 +1,9 @@
-package com.example.myappcancheito
+package com.example.myappcancheito.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myappcancheito.databinding.ActivitySelecionarTipoBinding
-import com.example.myappcancheito.empleador.LoginEmpleadorActivity
-import com.example.myappcancheito.postulante.LoginPostulanteActivity
 
 class SelecionarTipoActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySelecionarTipoBinding
